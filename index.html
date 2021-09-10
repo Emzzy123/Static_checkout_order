@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assest/shoppingcart-checkout_114473.ico" />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="app.js"></script>
+    <title>Order Confirmation</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Banner Section -->
+      <section class="banner">
+        <div class="center">
+          <div class="main-content">
+            <img
+              class="img_party"
+              src="assest/Images/party-icon.svg"
+              alt="Party icon"
+            />
+            <h1 class="h1">Let The Fun Begin!</h1>
+            <p class="main-content1">
+              Thanks for your order, we'll have it with you as soon as possible.
+            </p>
+            <p class="main-content1">
+              Your order number is #10293838 and a confirmation email has been
+              sent to the address provided.
+            </p>
+            <p class="ex1">Order Even Faster in Future</p>
+            <button class="create-btn">CREATE AN ACCOUNT</button>
+          </div>
+        </div>
+      </section>
+      <h1 class="ex2">Here's What You've Ordered</h1>
+      <!-- Catalogue section -->
+      <section class="section1">
+        <!-- Catalogue items -->
+        <div class="items">
+          <div class="item1">
+            <div>
+              <img
+                class="img_tramp"
+                src="assest/Images/prod-TN-1.jpg"
+                alt="Jumpking Deluxe"
+              />
+            </div>
+            <div class="tramptext">
+              <p class="trampdesc">
+                17ft x 12ft Jumpking Deluxe Rectangular Trampoline with
+                Enclosure
+              </p>
+              <p>
+                <del class="slash_amount"><i>&#163;1069.00</i></del>
+                <span class="amount">&#163;949.00</span>
+              </p>
+            </div>
+            <div class="qty">QTY1</div>
+          </div>
+          <div class="item2">
+            <div>
+              <img
+                class="img_tramp"
+                src="assest/Images/prod-TN-2.jpg"
+                alt="Jumpking Deluxe"
+              />
+            </div>
+            <div class="tramptext">
+              <p class="trampdesc">
+                14ft Salta Black Round Comfort Edition Trampoline with Enclosure
+              </p>
+              <p>
+                <span class="amount2">&#163;369.00</span>
+              </p>
+            </div>
+            <div class="qty">QTY1</div>
+          </div>
+        </div>
+        <!-- Amount Section -->
+        <div class="total">
+          <div class="subtotal">
+            <div class="subtotal1">Subtotal</div>
+            <div>&#163;1318.00</div>
+          </div>
+          <div class="delivery">
+            <div class="subtotal1">Delivery</div>
+            <div>FREE</div>
+          </div>
+          <div class="working">
+            <div>Next Working Day</div>
+            <div class="working1">(If ordered before 3pm)</div>
+          </div>
+          <div class="finaltotal">
+            <div class="finaltotal1">Total</div>
+            <div class="finaltotal2">&#163;1318.00</div>
+          </div>
+          <div class="mastercard">
+            <p>You paid using Mastercard</p>
+            <p>
+              <img
+                class="img_master"
+                src="assest/Images/card-icon.svg"
+                alt="Mastercard icon"
+              />
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter Subscription -->
+      <div class="subscribe">
+        <p class="ex3">Subscribe For The Latest Offers</p>
+        <button class="modal-btn ex4">Subribe</button>
+      </div>
+    </div>
+
+    <!-- Newsletter Modal -->
+    <div class="modal-bg">
+      <div>
+        <div class="heading">
+          <h2>Newsletter Signup</h2>
+        </div>
+        <form class="modal" id="modal">
+          <p class="label">
+            <label for="name">Your Name<span>*</span> </label>
+          </p>
+          <input type="text" id="name1" name="name" size="67" />
+          <p class="label">
+            <label for="telephone">Your Telephone Number<span>*</span> </label>
+          </p>
+          <input type="text" id="telephone" name="telephone" size="67" />
+          <p class="label">
+            <label for="email">Your Email Address<span>*</span> </label>
+          </p>
+          <input type="email" id="email" name="email" size="67" />
+          <button type="submit" value="Submit">Signup</button>
+          <span class="modal-close"
+            ><img
+              class="modal_img"
+              src="assest/Images/cross_circle_close_icon_175528.svg"
+            />
+            Close
+          </span>
+        </form>
+      </div>
+    </div>
+    <!-- Create Account Modal -->
+    <div class="create-bg modal-bg">
+      <div>
+        <div class="heading">
+          <h2>Create account</h2>
+        </div>
+        <form class="modal" id="create_modal">
+          <p class="label">
+            <label for="name">Your Name<span>*</span> </label>
+          </p>
+          <input type="text" id="name2" name="name" size="67" />
+          <p class="label">
+            <label for="email">Your Email Address<span>*</span> </label>
+          </p>
+          <input type="email" id="email" name="email" size="67" />
+          <p class="label">
+            <label for="password">Password<span>*</span> </label>
+          </p>
+          <input type="password" id="password" name="password" size="67" />
+          <p class="label">
+            <label for="confirm_password"
+              >Confirm Password<span>*</span>
+            </label>
+          </p>
+          <input type="password" name="password2" size="67" />
+          <button type="submit" value="Submit">Create Account</button>
+          <span class="create-close"
+            ><img
+              class="modal_img"
+              src="assest/Images/cross_circle_close_icon_175528.svg"
+            />
+            Close
+          </span>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
