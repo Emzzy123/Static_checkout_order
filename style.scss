@@ -13,20 +13,21 @@ body {
   color: $black;
   font-family: "Poppins", sans-serif;
   font-weight: 100;
+
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 
 //h1 section
 h1.ex2 {
-  margin: 35px 15px;
+  margin: 35px 30px;
   font-weight: 900;
-  font-size: 24px;
+  font-size: 23px;
 }
 
 //catalogue section
 .section1 {
-  height: 40vh;
+  height: 43vh;
   margin: 0px 30px 0px 30px;
   display: flex;
   background-color: $white;
@@ -35,7 +36,6 @@ h1.ex2 {
   .items {
     border-right: 1px solid rgba(211, 211, 211, 0.349);
     flex: 1;
-    margin: 0px 0px 0px 30px;
     padding-top: 30px;
     .item1 {
       display: flex;
@@ -54,18 +54,18 @@ h1.ex2 {
         padding-left: 10px;
         flex-grow: 1;
         p {
-          line-height: 40px; /* within paragraph */
+          line-height: 25px; /* within paragraph */
         }
         .trampdesc {
           font-weight: 600;
-          font-size: 13px;
+          font-size: 10px;
         }
         .slash_amount {
-          font-size: 12px;
+          font-size: 10px;
           color: rgb(66, 78, 78);
         }
         .amount {
-          font-size: 20px;
+          font-size: 14px;
           margin-left: 10px;
           font-weight: bold;
         }
@@ -73,7 +73,7 @@ h1.ex2 {
       .qty {
         justify-content: flex-end;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
     .item2 {
@@ -92,32 +92,33 @@ h1.ex2 {
         padding-left: 10px;
         flex-grow: 1;
         p {
-          line-height: 40px; /* within paragraph */
+          line-height: 25px; /* within paragraph */
         }
         .trampdesc {
           font-weight: 600;
-          font-size: 13px;
+          font-size: 10px;
         }
         .amount2 {
-          font-size: 20px;
+          font-size: 14px;
           font-weight: bold;
         }
       }
       .qty {
         justify-content: flex-end;
         font-weight: 600;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
   .total {
     flex: 1;
-    margin: 60px 0px 0px 30px;
+    margin: 22px 0px 0px 30px;
     padding-top: 30px;
     line-height: 35px;
     .subtotal {
       display: flex;
       font-weight: 900;
+      font-size: 14px;
       .subtotal1 {
         flex-grow: 1;
       }
@@ -125,6 +126,7 @@ h1.ex2 {
     .delivery {
       display: flex;
       font-weight: 900;
+      font-size: 14px;
       .subtotal1 {
         flex-grow: 1;
       }
@@ -132,9 +134,11 @@ h1.ex2 {
     .working {
       display: flex;
       font-weight: 900;
+      font-size: 14px;
       .working1 {
         margin-left: 5px;
-        font-weight: 100;
+        font-weight: 500;
+        font-size: 12px;
       }
     }
     .finaltotal {
@@ -146,22 +150,28 @@ h1.ex2 {
       font-weight: bold;
 
       .finaltotal1 {
-        font-size: 15px;
+        font-size: 14px;
         flex-grow: 1;
       }
       .finaltotal2 {
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
       }
     }
     .mastercard {
-      margin-top: 30px;
+      margin-top: 37px;
       display: flex;
       justify-content: center;
       background-color: rgba(223, 222, 222, 0.349);
       font-weight: 400;
+      height: 40px;
+
+      .mastertext {
+        font-size: 12px;
+        padding-top: 3px;
+      }
       .img_master {
-        margin-top: 5px;
+        padding-top: 10px;
         margin-left: 20px;
         height: 35px;
         width: 40px;
@@ -175,23 +185,26 @@ h1.ex2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 10px;
+
   p.ex3 {
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 900;
     line-height: 80px;
     text-align: center;
   }
+
   button.ex4 {
-    width: 150px;
+    width: 100px;
     background-color: $red;
     border: none;
     border-radius: 4px;
     color: white;
-    padding: 10px 15px;
+    padding: 10px 12px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
     margin: 3px 7px;
     &:hover {
@@ -326,94 +339,80 @@ h1.ex2 {
   }
 }
 
-/* Media queries for mobile responsiveness(small phones to tablet): from 0 to 768px */
-@media only screen and (max-width: 768px) {
+/* Media queries for mobile responsiveness(small phones to tablet): from 0 to 500px */
+@media only screen and (max-width: 700px) {
   .wrapper {
-    // display: block;
     height: 100vh;
   }
   .banner {
-    background-image: url(assest/Images/banner-bg-MOB.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 33vh;
-    //   margin-top: auto;
+    height: 36vh;
   }
   .center {
     color: $white;
-    padding: 0px 0px 100px 0px;
-
     .main-content {
-      font-size: 17px;
+      font-size: 13px;
       text-align: center;
       .main-content1 {
-        font-size: 19px;
+        font-size: 12px;
         font-weight: 400;
       }
       .img_party {
         margin-top: 30px;
-        width: 15%;
-        height: 15%;
+        width: 10%;
+        height: 10%;
       }
     }
     .ex1 {
-      font-size: 20px;
+      font-size: 11px;
       font-weight: 700;
     }
     button {
-      background-color: $yellow;
-      border: none;
-      border-radius: 4px;
-      color: $black;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
-      margin: 4px 0px;
-      &:hover {
-        cursor: pointer;
-      }
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px;
+      font-size: 10px;
     }
   }
 
   h1.ex2 {
     margin: 15px 15px;
     font-weight: 900;
-    font-size: 28px;
-    height: 3vh;
+    font-size: 20px;
+    height: 4vh;
   }
 
   .section1 {
-    height: 30vh;
+    height: 44vh;
     display: block;
     margin: 0px 10px 0px 10px;
+    border-bottom: none;
     .items {
       border-right: none;
       margin: 0px 5px 0px 5px;
       padding-top: 0px;
       .item1 {
         margin-right: 0px;
-        padding: 0px;
+        padding: 23px 0px;
         .tramptext {
           padding-right: 40px;
           margin-left: 10px;
           padding-left: 0px;
+          .slash_amount {
+            font-size: 11px;
+          }
           p {
             line-height: 30px; /* within paragraph */
           }
           .trampdesc {
             font-weight: 600;
-            font-size: 11.5px;
+            font-size: 13px;
             padding-right: 60px;
           }
         }
       }
+
       .item2 {
         margin-right: 0px;
-        padding: 0px;
+        padding: 23px 0px;
         border-bottom: 1px solid rgba(211, 211, 211, 0.349);
         .tramptext {
           padding-right: 40px;
@@ -424,8 +423,8 @@ h1.ex2 {
           }
           .trampdesc {
             font-weight: 600;
-            font-size: 11.5px;
-            padding-right: 60px;
+            font-size: 13px;
+            padding-right: 65px;
           }
         }
       }
@@ -434,7 +433,6 @@ h1.ex2 {
       margin: 0px 5px 0px 10px;
       padding-top: 10px;
       .finaltotal {
-        border-top: none;
         .finaltotal1 {
           font-size: 15px;
           flex-grow: 1;
@@ -453,23 +451,207 @@ h1.ex2 {
 
   .subscribe {
     position: relative;
-    top: 140px;
+    top: 250px;
     display: flex;
     flex-direction: column;
     p.ex3 {
       font-size: 18px;
       line-height: 70px;
-      margin-top: 30px;
+      margin-top: 40px;
       border-top: 1px solid rgba(211, 211, 211, 0.349);
     }
     button.ex4 {
       width: 150px;
+      margin-bottom: 30px;
     }
   }
 
   .modal {
     input {
       width: 250px;
+    }
+  }
+}
+
+/* Media queries for mobile responsiveness(small phones to tablet): from 0 to 375px */
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    height: 100vh;
+  }
+  .banner {
+    background-image: url(assest/Images/banner-bg-MOB.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 45vh;
+  }
+  .center {
+    color: $white;
+    .main-content {
+      padding-top: 5px;
+      .main-content1 {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+      }
+      .img_party {
+        margin-top: 10px;
+        width: 15%;
+        height: 15%;
+      }
+    }
+    h1 {
+      margin-bottom: 0px;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .ex1 {
+      font-size: 17px;
+      font-weight: 600;
+      margin: 10px 0px;
+    }
+    button {
+      font-size: 15px;
+      padding: 8px 50px 8px 0px;
+    }
+  }
+
+  h1.ex2 {
+    margin: 15px 15px;
+    font-weight: 900;
+    font-size: 21px;
+    height: 4vh;
+  }
+
+  .section1 {
+    margin: 0px 10px 0px 10px;
+    .items {
+      .item1 {
+        .img_tramp {
+          width: 70px;
+          height: 70px;
+        }
+        .tramptext {
+          padding-right: 0px;
+          p {
+            line-height: 20px;
+          }
+        }
+        .trampdesc {
+          padding-right: 0px;
+        }
+      }
+      .item2 {
+        .img_tramp {
+          width: 70px;
+          height: 70px;
+        }
+        .tramptext {
+          padding-right: 0px;
+          p {
+            line-height: 20px;
+          }
+        }
+        .trampdesc {
+          padding-right: 0px;
+        }
+      }
+    }
+  }
+
+  .total {
+    margin: 0px 5px 0px 10px;
+    padding-top: 10px;
+    .finaltotal {
+      border-top: none;
+      .finaltotal1 {
+        font-size: 15px;
+        flex-grow: 1;
+      }
+      .finaltotal2 {
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+    .mastercard {
+      margin: 10px 0;
+    }
+  }
+
+  .modal {
+    input {
+      width: 250px;
+    }
+  }
+}
+
+@media only screen and (max-height: 500px) {
+  .wrapper {
+    color: black;
+  }
+}
+
+//iphone 6,7,8 Plus
+@media screen and (width: 414px), screen and (height: 736px) {
+  .banner {
+    height: 42vh;
+  }
+  .center {
+    .main-content {
+      margin-top: 10px;
+    }
+  }
+  .subscribe {
+    top: 320px;
+  }
+}
+
+//Galaxy Note 3, Note 2 etc
+@media screen and (width: 360px), screen and (height: 640px) {
+  .banner {
+    height: 47vh;
+  }
+}
+
+//iphone 4
+@media screen and (width: 400px), screen and (height: 480px) {
+  .banner {
+    height: 60vh;
+  }
+  h1.ex2 {
+    margin: 30px 30px;
+    font-size: 15px;
+  }
+  .center {
+    color: $white;
+    .main-content {
+      .main-content1 {
+        font-size: 12px;
+      }
+    }
+    h1 {
+      font-size: 17px;
+    }
+    .ex1 {
+      font-size: 12px;
+    }
+    button {
+      font-size: 11px;
+    }
+  }
+  .subscribe {
+    top: 400px;
+  }
+}
+
+//ipad pro screen +
+@media screen and (width: 1024px), screen and (height: 1366px) {
+  .center {
+    color: $white;
+    .main-content {
+      margin-top: 50px;
+      .main-content1 {
+        font-size: 15px;
+      }
     }
   }
 }
